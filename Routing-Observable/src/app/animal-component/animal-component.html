@@ -1,1 +1,5 @@
-<p>animal-component works!</p>
+<ul>
+	@for (animal of animals; track animal.name) {
+		<li>{{ animal.emoji }} {{ animal.name }}</li>
+	}
+</ul>
