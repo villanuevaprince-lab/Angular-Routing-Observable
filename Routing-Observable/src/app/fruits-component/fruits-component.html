@@ -1,1 +1,5 @@
-<p>fruits-component works!</p>
+<ul>
+	@for (fruit of fruits; track fruit.name) {
+		<li>{{ fruit.emoji }} {{ fruit.name }}</li>
+	}
+</ul>
