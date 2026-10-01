@@ -1,0 +1,8 @@
+<h2>Basic Request</h2>
+<p>GET legge il post 1; POST invia un nuovo post di prova.</p>
+<button type="button" (click)="makeRequest()" [disabled]="loading">Make Request</button>
+<button type="button" (click)="makeCompactPost()" [disabled]="loading">MakePost</button>
+@if (loading) { <div role="status">loading...</div> }
+@if (error) { <p role="alert">{{ error }}</p> }
+@if (data) { <pre>{{ data | json }}</pre> }
+<p>JSONPlaceholder simula il salvataggio: il POST restituisce normalmente l’id 101, ma non memorizza il nuovo post sul server.</p>
